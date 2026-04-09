@@ -4,7 +4,29 @@
 
 @theme {
   --color-pattern-fg: oklab(0 0 0.03);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+:root {
+  --grid-line-color: oklch(0.96 0 0);
+}
+
+.dark {
+  --grid-line-color: oklch(0.15 0 0);
+}
+
+@property --grid-line-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(0.96 0 0);
+}
+
+/* Line separator utilities matching Oatmeal */
+.line-t { border-top: 1px solid var(--grid-line-color); }
+.line-b { border-bottom: 1px solid var(--grid-line-color); }
+.line-y { border-top: 1px solid var(--grid-line-color); border-bottom: 1px solid var(--grid-line-color); }
+.line-t-screen { border-top: 1px solid var(--grid-line-color); }
+.line-b-screen { border-bottom: 1px solid var(--grid-line-color); }
 
 html {
   scroll-padding-top: 6rem;

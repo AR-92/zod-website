@@ -1,26 +1,25 @@
 ---
 import '../styles/global.css';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
 
 interface Props {
   title?: string;
 }
 
-const { title = "Zod - Build, customize, and interact with AI agents" } = Astro.props;
+const { title = "Zod - AI Agent Platform" } = Astro.props;
 ---
 
-<!doctype html lang="en" class="dark">
+<!doctype html lang="en" class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Zod - A modular AI agent platform with a core engine that handles AI orchestration" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <title>{title}</title>
   </head>
-  <body class="font-sans text-gray-950 dark:text-white antialiased">
-    <Navbar />
+  <body class="font-sans text-gray-950 dark:text-white antialiased [overflow-anchor:none]">
     <slot />
-    <Footer />
   </body>
 </html>

@@ -1,18 +1,17 @@
 ---
-// SiteFooter component - Zod Oatmeal-style footer
 ---
 
 <footer class="col-start-3 row-start-2 max-sm:col-span-full max-sm:col-start-1 @container mb-16 grid w-full px-4 sm:px-2">
   <div class="mt-40">
     <div class="line-y py-2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-auto text-sky-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-auto text-sky-400">
         <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/>
       </svg>
     </div>
     <div class="line-b mt-10 grid grid-cols-2 gap-x-8 gap-y-10 py-2 @3xl:grid-cols-4">
       <div>
-        <h3 class="text-sm/7 font-semibold dark:text-white">Zod</h3>
-        <ul role="list" class="mt-4 flex flex-col gap-y-4">
+        <h3 class="text-sm/7 font-semibold dark:text-white">Product</h3>
+        <ul class="mt-4 flex flex-col gap-y-4" role="list">
           <li class="group">
             <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://www.zodagent.com/">Home</a>
           </li>
@@ -25,14 +24,14 @@
           <li class="group">
             <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://blogs.zodagent.com/">Blog</a>
           </li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-sm/7 font-semibold dark:text-white">Resources</h3>
-        <ul role="list" class="mt-4 flex flex-col gap-y-4">
           <li class="group">
             <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://app.zodagent.com/">App</a>
           </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm/7 font-semibold dark:text-white">Company</h3>
+        <ul class="mt-4 flex flex-col gap-y-4" role="list">
           <li class="group">
             <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://calendly.com/ranag/10min">Book a Meeting</a>
           </li>
@@ -42,8 +41,22 @@
         </ul>
       </div>
       <div>
+        <h3 class="text-sm/7 font-semibold dark:text-white">Resources</h3>
+        <ul class="mt-4 flex flex-col gap-y-4" role="list">
+          <li class="group">
+            <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://docs.zodagent.com/api">API Reference</a>
+          </li>
+          <li class="group">
+            <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://docs.zodagent.com/getting-started">Getting Started</a>
+          </li>
+          <li class="group">
+            <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://docs.zodagent.com/examples">Examples</a>
+          </li>
+        </ul>
+      </div>
+      <div>
         <h3 class="text-sm/7 font-semibold dark:text-white">Legal</h3>
-        <ul role="list" class="mt-4 flex flex-col gap-y-4">
+        <ul class="mt-4 flex flex-col gap-y-4" role="list">
           <li class="group">
             <a class="text-sm/7 text-gray-600 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white" href="https://docs.zodagent.com/legal/privacy">Privacy Policy</a>
           </li>
@@ -55,8 +68,10 @@
     </div>
     <div class="line-y mt-16 flex flex-col gap-x-3 py-2 text-sm/7 text-nowrap text-gray-600 lg:gap-x-4 @lg:flex-row dark:text-gray-400">
       <p>© 2026 NetAI Systems. All rights reserved.</p>
-      <div class="h-full w-px bg-sky-500 @max-lg:hidden"></div>
-      <a class="hover:text-sky-500 dark:hover:text-white" href="https://docs.zodagent.com/legal/privacy">Privacy policy</a>
+      <div class="h-full w-px bg-(--grid-line-color) @max-lg:hidden"></div>
+      <a class="hover:text-gray-950 dark:hover:text-white" href="https://docs.zodagent.com/legal/privacy">Privacy policy</a>
+      <div class="h-full w-px bg-(--grid-line-color) @max-lg:hidden"></div>
+      <a class="hover:text-gray-950 dark:hover:text-white" href="https://docs.zodagent.com/changelog">Changelog</a>
     </div>
   </div>
 </footer>
