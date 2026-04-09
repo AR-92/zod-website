@@ -1,0 +1,23 @@
+{
+  "name": "zod-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.0.0",
+    "daisyui": "^5.5.19",
+    "lucide-astro": "^0.556.0",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "postcss": "^8.4.33"
+  }
+}
